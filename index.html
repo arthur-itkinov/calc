@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>калькулятор</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <h2>Для расчета стоимости выбирете тип материала, толщину и кол-во метров</h2>
+      <div class="calc">
+        <select name="material" id="material">
+          <option selected>Выбирете материал</option>
+          <option value="1">Фанера</option>
+          <option value="2">МДФ</option>
+          <option value="3">Дерево</option>
+          <option value="4">ОСП</option>
+          <option value="5">ДСП</option>
+          <option value="6">ПВХ</option>
+          <option value="7">Оргстекло</option>
+          <option value="8">Монолитный поликарбонат</option>
+          <option value="9">Полипропилен</option>
+          <option value="10">Полистерол</option>
+          <option value="11">ПЭТ</option>
+          <option value="12">Текстолит</option>
+          <option value="13">Композит</option>
+        </select>
+        <select name="size" id="size">
+          <option selected>выберете размер</option>
+        </select>
+        <label for="metr"></label>
+        <input type="number" id="metr" value="" placeholder="Введите кол-во метров" />
+
+        <button id="btn">Итого</button>
+
+        <div class="" id="totalPrice"></div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
